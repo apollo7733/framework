@@ -1,0 +1,20 @@
+{
+  "name": "reducer-in-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "author": "yyc",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
+  },
+  "dependencies": {
+    "condense": "0.0.1",
+    "tern": "^0.23.0"
+  }
+}
