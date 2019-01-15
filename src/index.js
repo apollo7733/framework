@@ -56,4 +56,4 @@ const initStore = ()=>{
 	return {store};
 }
 
-export {registerModule,initStore}
+export {registerModule,initStore,actions}
