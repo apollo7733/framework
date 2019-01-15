@@ -53,7 +53,7 @@ const initStore = ()=>{
 	function *sagaAction(action) {if(action.saga){yield action.saga(action);}} //默认的saga函数
 	sagaMiddleware.run(function* () { yield takeEvery('*', sagaAction);}); //运行saga线程		
 	modules.forEach(m=>{Object.assign(actions,bindActionCreators(m.Actions, store.dispatch))}); //bind具体的action,也可以不绑定，直接通过dispatch进行访问
-	return {store};
+	return {store,actions};
 }
 
-export {registerModule,initStore,actions}
+export {registerModule,initStore}
